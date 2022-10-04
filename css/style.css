@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: Roboto;
 }
 
 body {
@@ -9,6 +8,44 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+h1, h3 {
+    color: #8adf67;
+    font-family: 'Fontdiner Swanky', cursive;
+    display: inline;
+    background-color: #181524;
+}
+
+h2 {
+    color: #b689d3;
+    font-family: 'Fontdiner Swanky', cursive;
+    display: inline;
+    margin-top: 100px !important;
+    background-color: #181524;
+}
+
+h4 {
+    display: block;
+    background-color: #181524;
+    color: #fff;
+}
+
+p, span {
+    color: #fff;
+    background-color: #181524;
+}
+
+div {
+    display: block;
+    box-sizing: border-box;
+}
+
+.my-toggler {
+    background-color: #8adf67 !important;
+    color: #b689d3 !important;
+    stroke: #b689d3 !important;
 }
 
 .my-nav div {
@@ -24,18 +61,40 @@ body {
 }
 
 .my-nav div div a:active {
-    color: #b689d3;
+    color: #b689d3 !important;
+}
+
+header {
+    height: 70vh;
+}
+
+.my-header-img {
+    width: 100% !important;
+    border-radius: 50px;
 }
 
 
-.my-btn {
-    background-color: #8adf67;
+.my-btn, .my-btn-header{
+    background-color: #8adf67 !important;
+    width: 100%;
+    font-family: 'Fontdiner Swanky', cursive !important;
 }
 
 .my-btn:hover {
-    color: #9b0e0e;
-    background-color: #bc6355;
-    text-decoration: none;
+    background-color: #b689d3 !important;
+}
+
+.my-btn-nav {
+    background-color: #8adf67 !important;
+}
+
+.my-btn-nav:hover {
+    background-color: #b689d3 !important;
+}
+
+
+.my-btn-header:hover {
+    background-color: #b689d3 !important;
 }
 
 .fly {
@@ -48,6 +107,41 @@ body {
 .rotate {
     animation: rotation 25s infinite linear;
 }
+
+.section-gap {
+    padding: 120px 0;
+}
+
+.single-menu {
+    background: #181429;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+    border: 4px #8adf67 solid;
+}
+
+.menu-name {
+    color: #8adf67;
+}
+
+.menu-price {
+    color: #b689d3;
+}
+
+.menu-image {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.menu-image img {
+    width: 100%;
+}
+
+.menu-order {
+    z-index: 200;
+    text-align: center;
+}
+
 
 @keyframes rotation {
     from {
@@ -68,5 +162,12 @@ body {
 
     50% {
         bottom: 5px;
+    }
+}
+
+@media (max-width: 991px) {
+
+    .my-header-img {
+        display: none
     }
 }
