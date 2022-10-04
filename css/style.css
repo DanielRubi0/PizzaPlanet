@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+}
+
+body {
+    background-image: url(/img/bg2.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.my-nav div {
+    background-color: black;
+}
+
+.my-nav div a {
+    color: #8adf67;
+}
+
+.my-nav div div a:hover {
+    color: #b689d3;
+}
+
+.my-nav div div a:active {
+    color: #b689d3;
+}
+
+
+.my-btn {
+    background-color: #8adf67;
+}
+
+.my-btn:hover {
+    color: #9b0e0e;
+    background-color: #bc6355;
+    text-decoration: none;
+}
+
+.fly {
+    animation: MoveUpDown .8s linear infinite;
+    position: relative;
+    left: 0;
+    bottom: 0;
+}
+
+.rotate {
+    animation: rotation 25s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+@keyframes MoveUpDown {
+
+    0%,
+    100% {
+        bottom: 0;
+    }
+
+    50% {
+        bottom: 5px;
+    }
+}
