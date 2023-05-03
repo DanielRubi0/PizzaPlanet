@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(../img/bg2.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+h1, h3 {
+    color: #8adf67;
+    font-family: 'Fontdiner Swanky', cursive;
+    display: inline;
+    background-color: #181524;
+}
+
+h2 {
+    color: #b689d3;
+    font-family: 'Fontdiner Swanky', cursive;
+    display: inline;
+    margin-top: 100px !important;
+    background-color: #181524;
+}
+
+h4 {
+    display: block;
+    background-color: #181524;
+    color: #fff;
+}
+
+p, span {
+    color: #fff;
+    background-color: #181524;
+}
+
+div {
+    display: block;
+    box-sizing: border-box;
+}
+
+.my-toggler {
+    background-color: #8adf67 !important;
+    color: #b689d3 !important;
+    stroke: #b689d3 !important;
+}
+
+.my-nav div {
+    background-color: black;
+}
+
+.my-nav div a {
+    color: #8adf67;
+}
+
+.my-nav div div a:hover {
+    color: #b689d3;
+}
+
+.my-nav div div a:active {
+    color: #b689d3 !important;
+}
+
+header {
+    height: 70vh;
+}
+
+.my-header-img {
+    width: 100% !important;
+    border-radius: 50px;
+}
+
+
+.my-btn, .my-btn-header{
+    background-color: #8adf67 !important;
+    width: 100%;
+    font-family: 'Fontdiner Swanky', cursive !important;
+}
+
+.my-btn:hover {
+    background-color: #b689d3 !important;
+}
+
+.my-btn-nav {
+    background-color: #8adf67 !important;
+}
+
+.my-btn-nav:hover {
+    background-color: #b689d3 !important;
+}
+
+
+.my-btn-header:hover {
+    background-color: #b689d3 !important;
+}
+
+.fly {
+    animation: MoveUpDown .8s linear infinite;
+    position: relative;
+    left: 0;
+    bottom: 0;
+}
+
+.rotate {
+    animation: rotation 25s infinite linear;
+}
+
+.section-gap {
+    padding: 120px 0;
+}
+
+.single-menu {
+    background: #181429;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+    border: 4px #8adf67 solid;
+}
+
+.menu-name {
+    color: #8adf67;
+}
+
+.menu-price {
+    color: #b689d3;
+}
+
+.menu-image {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.menu-image img {
+    width: 100%;
+}
+
+.menu-order {
+    z-index: 200;
+    text-align: center;
+}
+
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+@keyframes MoveUpDown {
+
+    0%,
+    100% {
+        bottom: 0;
+    }
+
+    50% {
+        bottom: 5px;
+    }
+}
+
+@media (max-width: 991px) {
+
+    .my-header-img {
+        display: none
+    }
+}
